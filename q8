@@ -1,3 +1,4 @@
+# Level 2 Question 8
 #Simple traffic light simulator
 # Input from user
 traffic_light = input("Enter the traffic light color (red, yellow, green): ")
