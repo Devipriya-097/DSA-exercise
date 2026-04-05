@@ -1,0 +1,198 @@
+Question 1: Stack – Expression Evaluation System
+
+You are designing a calculator engine that evaluates mathematical expressions entered by users.
+
+The system must:
+
+Convert infix expressions (e.g., A + B * C) to postfix.
+Evaluate postfix expressions efficiently.
+Detect invalid expressions.
+Tasks:
+Why is a stack the most suitable data structure for expression evaluation?
+Write pseudocode to:
+Convert infix → postfix
+Evaluate postfix expression
+What happens if you try to implement this without a stack?
+Compare time complexity of:
+Conversion
+Evaluation
+What are the limitations of using a stack here?
+⚙️ Question 2: Stack – Function Call Management (Call Stack)
+
+You are implementing a runtime system for a programming language.
+
+Requirements:
+
+Function calls must be tracked.
+Each function stores:
+Local variables
+Return address
+When a function ends, control returns correctly.
+Tasks:
+Why is a stack used for function calls?
+Explain how push and pop simulate function execution.
+What problem occurs if recursion is too deep?
+Compare stack vs heap memory for this use case.
+What is the time and space complexity of function calls?
+🔄 Question 3: Queue – Print Spooler System
+
+You are designing a printer queue system in an office.
+
+Requirements:
+
+Print jobs arrive dynamically.
+Jobs must be processed in first-come, first-served (FCFS) order.
+Multiple users send requests simultaneously.
+Tasks:
+Why is a queue ideal for this system?
+Write pseudocode for:
+Adding a print job
+Processing a job
+What happens if a stack is used instead?
+Compare time complexity of enqueue and dequeue.
+How would you modify the queue for priority printing?
+⏱️ Question 4: Circular Queue – Task Scheduling System
+
+You are designing a task scheduler for background processes.
+
+Requirements:
+
+Tasks run repeatedly in cycles.
+After execution, a task goes to the back.
+System should avoid shifting elements.
+Tasks:
+Why is a circular queue better than a normal queue?
+Write pseudocode for enqueue and dequeue.
+What problem does circular queue solve compared to linear queue?
+Compare time complexity:
+Insertion
+Deletion
+What happens when the queue becomes full?
+🚦 Question 5: Deque – Sliding Window Problem
+
+You are building a system that analyzes real-time stock prices.
+
+Requirement:
+
+Find the maximum value in a sliding window of size K.
+Data arrives continuously.
+Tasks:
+Why is a deque (double-ended queue) optimal for this problem?
+Write pseudocode for sliding window maximum.
+Compare deque vs brute-force approach.
+What is the time complexity improvement?
+Can this be done using a stack? Why or why not?
+🔁 Question 6: Queue + Stack Hybrid – Browser History
+
+You are designing a browser navigation system.
+
+Requirements:
+
+Back button → go to previous page
+Forward button → go to next page
+Visiting a new page clears forward history
+Tasks:
+Why are two stacks used instead of a queue?
+Explain operations:
+Visit new page
+Back
+Forward
+What happens if you use a queue instead?
+Compare time complexity of operations.
+What is the space complexity?
+
+
+
+
+STACK – Advanced Questions
+Question 1: Stack – Balanced Parentheses Checker (Compiler Design)
+
+You are building a syntax validator for a programming language.
+
+Requirements:
+
+Check if parentheses {}, [], () are balanced.
+Expressions may be nested.
+Must detect the exact position of error.
+Tasks:
+Why is a stack ideal for this problem?
+Write pseudocode for validation.
+What happens if you use a queue instead?
+What is the time and space complexity?
+How would you extend this for HTML/XML tag validation?
+Question 2: Stack – Stock Span Problem (Financial System)
+
+You are designing a stock analysis system.
+
+Requirement:
+
+For each day, calculate how many consecutive days before it had less or equal price.
+
+Example:
+[100, 80, 60, 70, 60, 75, 85] → [1, 1, 1, 2, 1, 4, 6]
+
+Tasks:
+Why is a stack used instead of brute force?
+Write pseudocode for the solution.
+Compare time complexity with brute force.
+What type of stack (monotonic?) is used here?
+Can this be solved using a queue? Explain.
+Question 3: Stack – Undo Operation in Limited Memory System
+
+You are designing an undo feature for a lightweight mobile app.
+
+Constraints:
+
+Only last N operations can be stored.
+Memory is limited.
+Old operations must be discarded automatically.
+Tasks:
+How would you design this using a stack?
+How do you handle overflow (more than N operations)?
+What happens if user performs redo after new action?
+Compare stack vs linked list implementation.
+What is the time and space complexity?
+🚀 QUEUE – Advanced Questions
+Question 4: Queue – Multi-User Chat Server
+
+You are designing a chat messaging system.
+
+Requirements:
+
+Messages arrive from multiple users.
+Must be processed in order.
+System should handle high traffic.
+Tasks:
+Why is a queue suitable for message handling?
+Write pseudocode for enqueue and dequeue.
+What happens if messages are processed out of order?
+How would you scale this system?
+Compare simple queue vs priority queue in this scenario.
+Question 5: Queue – Breadth First Search (Graph Traversal)
+
+You are implementing a social network friend suggestion system.
+
+Requirement:
+
+Find all users within K levels of connection.
+Tasks:
+Why is a queue used in BFS?
+Write pseudocode for BFS traversal.
+What happens if you use a stack instead?
+Compare BFS vs DFS in this use case.
+What is the time and space complexity?
+Question 6: Priority Queue – Emergency Room System
+
+You are designing a hospital emergency system.
+
+Requirements:
+
+Patients arrive randomly.
+Critical patients must be treated first.
+Less critical patients wait.
+Tasks:
+Why is a priority queue better than a normal queue?
+How would you assign priority levels?
+Write pseudocode for insertion and removal.
+What happens if two patients have same priority?
+Compare time complexity with normal queue.
