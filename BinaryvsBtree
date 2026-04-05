@@ -1,0 +1,46 @@
+A Binary Tree is a tree data structure where each node has at most 2 children:
+Left child
+Right child
+
+📌 Key Points:
+Each node → max 2 children
+Used in:
+Binary Search Trees (BST)
+Expression trees
+Heaps
+Structure is simple and flexible
+Can become unbalanced (like a linked list 😅)
+
+✅ Example:
+      10
+     /  \
+    5    20
+🔹 B-Tree
+4
+
+💡 What it is:
+A B-Tree is a self-balancing multi-way tree used mainly in databases and file systems.
+
+📌 Key Points:
+Each node can have more than 2 children
+Stores multiple keys in one node
+Always balanced
+Optimized for disk access (fewer reads)
+
+✅ Example (Order 3):
+      [10 | 20]
+     /    |    \
+   [5]  [15]  [25]
+   
+⚔️ Main Differences
+Feature	Binary Tree 🌳	B-Tree �
+Children per node	Max 2	Many (depends on order)
+Keys per node	1	Multiple
+Balance	Not always balanced	Always balanced
+Usage	General purpose	Databases, file systems
+Search speed	Slower if unbalanced	Fast (logarithmic)
+Storage	Memory	Disk-friendly
+
+⚡ Final One-Line Difference
+👉 Binary Tree = 2 children per node
+👉 B-Tree = many children + balanced + used for databases
